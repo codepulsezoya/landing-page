@@ -320,5 +320,17 @@
   <script src="assets/js/ripple.min.js"></script>
   <script src="assets/js/YTPlayer.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    $('.ca_appointment_form').on('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your appointment request has been submitted.');
+      this.reset();
+    });
+    $('.cs_newsletter_form').on('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! You have been subscribed to our newsletter.');
+      this.reset();
+    });
+  </script>
   </body>
 </html>
