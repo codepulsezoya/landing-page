@@ -118,16 +118,39 @@ a:hover {
 }
 
 /* === Hero Section === */
+.cs_hero,
 .cs_hero_top {
   background: var(--cb-deep-navy) !important;
 }
 
 .cs_hero_title {
   font-family: var(--cb-font-heading) !important;
+  color: var(--cb-pure-white) !important;
 }
 
 .cs_hero_subtitle {
   font-family: var(--cb-font-body) !important;
+  color: var(--cb-pure-white) !important;
+}
+
+.cs_hero_text p {
+  color: var(--cb-pure-white) !important;
+}
+
+.cs_hero .cs_btn {
+  color: var(--cb-pure-white) !important;
+}
+
+.cs_hero .cs_btn:hover {
+  color: var(--cb-pure-white) !important;
+}
+
+/* Hero triangle/decorative pseudo-elements */
+.cs_hero::before,
+.cs_hero::after,
+.cs_hero_top::before,
+.cs_hero_top::after {
+  border-color: transparent !important;
 }
 
 /* === Buttons === */
@@ -196,9 +219,18 @@ a:hover {
   background-color: var(--cb-deep-navy) !important;
 }
 
-.cs_funfact_icon {
-  border-radius: var(--cb-radius-full);
-  background: rgba(255,255,255,0.1);
+.cs_counting .cs_counter_number,
+.cs_counting .cs_counter_title,
+.cs_counting .cs_white_color {
+  color: var(--cb-pure-white) !important;
+}
+
+.cs_counting .cs_funfact_icon {
+  background: rgba(255,255,255,0.15) !important;
+}
+
+.cs_counting .cs_funfact_icon i {
+  color: var(--cb-pure-white) !important;
 }
 
 /* === Tabs === */
