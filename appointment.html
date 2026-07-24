@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Laralink">
-    <link rel="icon" href="assets/images/icons/favicon.png">
-    <title>Evencare - Appointment</title>
+    <meta name="author" content="Code Blue Emergency Hospital">
+    <link rel="icon" href="assets/images/codeblue/cropped-Code-Blue-icon-32x32.png">
+    <title>Appointment - Code Blue Emergency Hospital</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <link rel="stylesheet" href="assets/css/light_gallery.min.css">
     <link rel="stylesheet" href="assets/css/odometer.css">
-    <link rel="stylesheet" href="assets/css/timepicker.min.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/codeblue.css">
+    <style>
+      .cs_preloader { animation: autoHidePreloader 0.5s 3s forwards; }
+      @keyframes autoHidePreloader { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+    </style>
   </head>
   <body>
 
@@ -26,21 +28,20 @@
       <div class="container">
         <div class="cs_top_header_in">
           <div class="cs_top_header_left">
-           <div class="cs_top_nav cs_fs_16 cs_white_color">
-              <i class="fa-solid fa-location-dot"></i>5010 Avenue of the Moon New York, NY 10018 US.
+            <div class="cs_top_nav cs_fs_16 cs_white_color">
+              <a href="tel:+917070899941" class="cs_white_color"><i class="fa-solid fa-phone"></i> +91-7070899941</a>
+              &nbsp;&nbsp;
+              <a href="mailto:codebluehospital1@gmail.com" class="cs_white_color"><i class="fa-solid fa-envelope"></i> codebluehospital1@gmail.com</a>
+              &nbsp;&nbsp;
+              <span><i class="fa-solid fa-location-dot"></i> Muzaffarpur, Bihar</span>
             </div>
           </div>
           <div class="cs_top_header_right">
-            <ul class="cs_top_nav  cs_mp0">
-              <li><a href="#">Live Chat </a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
             <div class="cs_social_btns cs_style_1">
-              <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
-              <a href="https://dribbble.com/" target="_blank"> <i class="fa-brands fa-dribbble"></i></a>
-              <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61590314117148#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/code_blue_emergency_hospital" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://maps.app.goo.gl/DeEyWCRNxr993ks66" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+              <a href="https://youtube.com/channel/UCXoJX2NYa7jBwwtGiRiJI0w" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
         </div>
@@ -51,16 +52,15 @@
         <div class="cs_main_header_in">
           <div class="cs_main_header_left">
             <a class="cs_site_branding" href="index.html">
-              <img src="assets/images/logo.png" alt="Logo">
+              <img src="assets/images/codeblue/Code-Blue-logo.png" alt="Code Blue Emergency Hospital">
             </a>
             <div class="cs_nav cs_primary_font">
               <ul class="cs_nav_list cs_fs_18">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="doctors.html">Doctor</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
@@ -69,20 +69,37 @@
           <div class="cs_main_header_right cs_accent_color_v1">
             <div class="cs_header_contact">
               <div class="cs_header_contact_icon text-accent">
-               <img src="assets/images/icons/phone_icon_3.svg" alt="">
+                <i class="fa-solid fa-phone-volume"></i>
               </div>
               <div class="cs_header_contact_right">
-                <h3 class="cs_fs_14 cs_normal cs_accent_color_v1 mb-0">Need help?</h3>
-                <h3 class="cs_fs_14 cs_normal cs_accent_color_v1 mb-0">(+800) 1234 5678 90</h3>
+                <h3 class="cs_fs_14 cs_normal cs_accent_color_v1 mb-0">Emergency?</h3>
+                <h3 class="cs_fs_14 cs_normal cs_accent_color_v1 mb-0">+91-7070899941</h3>
               </div>
             </div>
+            <a href="tel:+917070899941" class="cs_btn cs_style_1 cs_fs_16 cs_semibold cs_accent_bg_v1 cs_white_color">Book An Appointment</a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="cs_bg_filed" id="appointment" data-src="assets/images/appointment_bg.jpeg">
+  <!-- Start Hero Section -->
+  <section class="cs_hero cs_style_1 position-relative" style="background-color: #0a1658;">
+    <div class="cs_hero_top">
+      <div class="container">
+        <div class="row align-items-center" style="min-height: 400px;">
+          <div class="col-lg-12 text-center">
+            <h1 class="cs_hero_title cs_fs_60 cs_semibold cs_white_color wow fadeInDown">Book Appointment</h1>
+            <p class="cs_hero_subtitle cs_fs_18 cs_white_color">Schedule your visit to Code Blue Emergency Hospital</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <!-- Appointment Section -->
+  <section id="appointment">
     <div class="cs_height_120 cs_height_lg_80"></div>
     <div class="container">
       <div class="row cs_gap_y_30">
@@ -95,31 +112,31 @@
             <div class="cs_height_40 cs_height_lg_30"></div>
             <div class="cs_accordian cs_style_1 cs_white_bg">
               <h3 class="cs_accordian_head cs_fs_18 cs_medium mb-0">
-                What medical expenses are not tax deductible?
+                What are your hospital timings?
                 <span class="cs_accordian_toggle cs_center"><i class="fa-regular fa-eye"></i><i class="fa-regular fa-eye-slash"></i></span>
               </h3>
-              <div class="cs_accordian_body">There are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis, there are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis.</div>
+              <div class="cs_accordian_body">We are available 24/7 for emergency care. Our outpatient department operates from 9:00 AM to 9:00 PM.</div>
             </div>
             <div class="cs_accordian cs_style_1 cs_white_bg active">
               <h3 class="cs_accordian_head cs_fs_18 cs_medium mb-0">
-                Are dental expenses deductible 2023?
+                Do I need an appointment for emergency?
                 <span class="cs_accordian_toggle cs_center"><i class="fa-regular fa-eye"></i><i class="fa-regular fa-eye-slash"></i></span>
               </h3>
-              <div class="cs_accordian_body">There are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis, there are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis.</div>
+              <div class="cs_accordian_body">No appointment is needed for emergencies. Just walk in or call us at +91-7070899941.</div>
             </div>
             <div class="cs_accordian cs_style_1 cs_white_bg">
               <h3 class="cs_accordian_head cs_fs_18 cs_medium mb-0">
-                What is the standard deduction for 2023 for over 65?
+                What insurance do you accept?
                 <span class="cs_accordian_toggle cs_center"><i class="fa-regular fa-eye"></i><i class="fa-regular fa-eye-slash"></i></span>
               </h3>
-              <div class="cs_accordian_body">There are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis, there are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis.</div>
+              <div class="cs_accordian_body">We accept all major insurance plans. Please contact our billing department for specific queries.</div>
             </div>
             <div class="cs_accordian cs_style_1 cs_white_bg">
               <h3 class="cs_accordian_head cs_fs_18 cs_medium mb-0">
-                What qualifies as a qualified medical expense?
+                Is parking available?
                 <span class="cs_accordian_toggle cs_center"><i class="fa-regular fa-eye"></i><i class="fa-regular fa-eye-slash"></i></span>
               </h3>
-              <div class="cs_accordian_body">There are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis, there are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis.</div>
+              <div class="cs_accordian_body">Yes, we have free parking available for all patients and visitors.</div>
             </div>
           </div>
         </div>
@@ -131,70 +148,15 @@
             </div>
             <div class="cs_height_40 cs_height_lg_30"></div>
             <form class="ca_appointment_form row cs_gap_y_24">
-              <div class="col-md-12">
-                <div class="cs_input_field">
-                  <input type="text" name="name" placeholder="Name" class="cs_form_field cs_radius_5">
-                  <span><i class="fa-solid fa-user"></i></span>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="cs_input_field">
-                  <input type="text" name="phone" placeholder="Phone" class="cs_form_field cs_radius_5">
-                  <span><i class="fa-solid fa-phone"></i></span>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="cs_input_field">
-                  <input type="email" name="email" placeholder="Email Address" class="cs_form_field cs_radius_5">
-                  <span><i class="fa-solid fa-envelope"></i></span>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="cs_custom_select_wrap">
-                  <select name="udoctor" class="cs_select_1">
-                    <option value="select-doctor">Select Doctor</option>
-                    <option value="mak-rushi">Dr. Mak Roshi</option>
-                    <option value="mohoshin-kabir">Dr. Mohoshin Kabir</option>
-                    <option value="nayon-borua">Dr. Nayon Borua</option>
-                    <option value="rasel-islam">Dr. Rasel Islam</option>
-                    <option value="mahid-islam">Dr. Mahid Islam</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="cs_custom_select_wrap">
-                  <select name="udepartment" class="cs_select_1">
-                    <option value="select-department">Select Department</option>
-                    <option value="crutches">Crutches</option>
-                    <option value="x-Ray">X-Ray</option>
-                    <option value="pulmonary">Pulmonary</option>
-                    <option value="cardiology">Cardiology</option>
-                    <option value="dental-care">Dental Care</option>
-                    <option value="neurology">Neurology</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="cs_input_field">
-                  <input name="utime" type="text" id="utime" placeholder="Choose Time" class="cs_time">
-                  <span><i class="fa-solid fa-clock"></i></span>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="cs_input_field">
-                  <input name="udate" type="text" id="udate" placeholder="Booking Date" class="cs_date">
-                  <span><i class="fa-solid fa-calendar"></i></span>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="cs_input_field">
-                  <textarea name="note" rows="2" placeholder="Note" class="cs_form_field cs_radius_5"></textarea>
-                  <span><i class="fa-solid fa-note-sticky"></i></span>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <button type="submit" class="cs_btn cs_style_1 cs_size_md cs_accent_bg_v1 cs_white_color cs_fs_18 cs_semibold">Make An Appointment</button>
-              </div>
+              <div class="col-md-12"><div class="cs_input_field"><input type="text" name="name" placeholder="Name" class="cs_form_field cs_radius_5"><span><i class="fa-solid fa-user"></i></span></div></div>
+              <div class="col-md-6"><div class="cs_input_field"><input type="text" name="phone" placeholder="Phone" class="cs_form_field cs_radius_5"><span><i class="fa-solid fa-phone"></i></span></div></div>
+              <div class="col-md-6"><div class="cs_input_field"><input type="email" name="email" placeholder="Email Address" class="cs_form_field cs_radius_5"><span><i class="fa-solid fa-envelope"></i></span></div></div>
+              <div class="col-md-6"><div class="cs_custom_select_wrap"><select name="udoctor" class="cs_select_1"><option value="">Select Doctor</option><option value="tarique">Dr. Tarique Jamil</option><option value="ahmad">Dr. Ahmad Kaif</option><option value="jamil">Dr. Jamil Ahmad</option></select></div></div>
+              <div class="col-md-6"><div class="cs_custom_select_wrap"><select name="udepartment" class="cs_select_1"><option value="">Select Department</option><option value="emergency">Emergency Care</option><option value="trauma">Trauma & Accident</option><option value="cardiac">Cardiac Emergency</option><option value="icu">Critical Care & ICU</option><option value="general">General Medicine</option></select></div></div>
+              <div class="col-md-6"><div class="cs_input_field"><input name="utime" type="text" id="utime" placeholder="Choose Time" class="cs_time"><span><i class="fa-solid fa-clock"></i></span></div></div>
+              <div class="col-md-6"><div class="cs_input_field"><input name="udate" type="text" id="udate" placeholder="Booking Date" class="cs_date"><span><i class="fa-solid fa-calendar"></i></span></div></div>
+              <div class="col-md-12"><div class="cs_input_field"><textarea name="note" rows="2" placeholder="Note" class="cs_form_field cs_radius_5"></textarea><span><i class="fa-solid fa-note-sticky"></i></span></div></div>
+              <div class="col-md-12"><button type="submit" class="cs_btn cs_style_1 cs_size_md cs_accent_bg_v1 cs_white_color cs_fs_18 cs_semibold">Make An Appointment</button></div>
             </form>
           </div>
         </div>
@@ -203,14 +165,13 @@
     <div class="cs_height_120 cs_height_lg_80"></div>
   </section>
 
+  <!-- Newsletter -->
   <section class="cs_newsletter_1_wrap">
     <div class="container">
       <div class="cs_newsletter cs_style_1 cs_accent_bg_v1 wow fadeIn">
         <div class="cs_newsletter_left d-flex gap-4">
-          <div class="cs_newsletter_icon">
-            <img src="assets/images/icons/envelop_icon.png" alt="Icon">
-          </div>
-          <h2 class="cs_newsletter_title cs_fs_24 cs_semibold mb-0 cs_white_color">Latest Updates Subscribe To <br> Our Newsletter</h2>
+          <div class="cs_newsletter_icon"><img src="assets/images/icons/envelop_icon.png" alt="Icon"></div>
+          <h2 class="cs_newsletter_title cs_fs_24 cs_semibold mb-0 cs_white_color">Latest Updates Subscribe To<br>Our Newsletter</h2>
         </div>
         <form action="#" class="cs_newsletter_form">
           <input type="text" name="email" class="cs_newsletter_form_field cs_radius_2" placeholder="Enter your Email">
@@ -220,92 +181,76 @@
     </div>
   </section>
 
-  <footer class="cs_footer cs_style_1 cs_bg_filed cs_primary_bg" data-src="assets/images/footer_bg.jpeg">
+  <!-- Footer -->
+  <footer class="cs_footer cs_style_1">
     <div class="container">
       <div class="cs_height_95 cs_height_lg_65"></div>
       <div class="cs_footer_main">
         <div class="row cs_gap_y_30">
           <div class="col-lg-3">
             <div class="cs_footer_widget cs_text_widget">
-              <img src="assets/images/footer_logo.png" alt="Logo">
-              <p class="cs_fs_18 cs_white_color">Get a full cRontrol of debts in the dsu digital world simpl labore et dolore ma</p>
+              <img src="assets/images/codeblue/Code-Blue-logo.png" alt="Logo">
+              <p class="cs_fs_18 cs_white_color">Available 24/7 with expert emergency services, advanced care, and unwavering commitment to patients.</p>
               <h3 class="cs_fs_24 cs_white_color cs_semibold">Follow us on</h3>
               <div class="cs_social_btns cs_style_1 cs_white_color">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61590314117148#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/code_blue_emergency_hospital" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://maps.app.goo.gl/DeEyWCRNxr993ks66" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+                <a href="https://youtube.com/channel/UCXoJX2NYa7jBwwtGiRiJI0w" target="_blank"><i class="fa-brands fa-youtube"></i></a>
               </div>
             </div>
           </div>
           <div class="col-lg-2">
             <div class="cs_footer_widget cs_menu_widget">
-                  <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color">Our Services</h3>
-                  <ul class="cs_fs_18 cs_white_color cs_fs_18 cs_medium cs_mp0">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="doctors.html">Our Team</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="gallery.html">Our Projects</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="cs_footer_widget cs_post_widget">
-                  <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color">Latest Post</h3>
-                  <article class="cs_post cs_style_2">
-                    <a href="blog.html" class="cs_post_thumb cs_zoom">
-                      <img src="assets/images/latest_post_1.jpeg" alt="Post Thumb" class="cs_zoom_in">
-                    </a>
-                    <div class="cs_post_info">
-                      <div class="cs_post_meta cs_white_color">
-                        <i class="fa-solid fa-calendar"></i>24th May 2023
-                      </div>
-                      <h3 class="cs_post_title cs_fs_18 cs_white_color cs_semibold mb-0"><a href="blog.html">This Place Really Place For Awesome</a></h3>
-                    </div>
-                  </article>
-                  <hr>
-                  <article class="cs_post cs_style_2">
-                    <a href="blog.html" class="cs_post_thumb cs_zoom">
-                      <img src="assets/images/latest_post_2.jpeg" alt="Post Thumb" class="cs_zoom_in">
-                    </a>
-                    <div class="cs_post_info">
-                      <div class="cs_post_meta cs_white_color">
-                        <i class="fa-solid fa-calendar"></i>24th Dec 2023
-                      </div>
-                      <h3 class="cs_post_title cs_fs_18 cs_white_color cs_semibold mb-0"><a href="blog.html">This Place Really Place For Awesome</a></h3>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="cs_footer_widget cs_menu_widget">
-                  <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color">Working Hours</h3>
-                  <ul class="cs_contact_info cs_fs_18 cs_white_color cs_medium cs_mp0">
-                    <li>Monday: 10.00AM - 4.00PM </li>
-                    <li>Tuesday: 10.00AM - 4.00PM </li>
-                    <li>Wednesday: 10.00AM - 4.00PM</li>
-                    <li>Thursday: 10.00AM - 4.00PM </li>
-                    <li>Friday: Close</li>
-                  </ul>
-                </div>
-              </div>
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color">Quick Links</h3>
+              <ul class="cs_fs_18 cs_white_color cs_medium cs_mp0">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="cs_footer_widget cs_menu_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color">Our Services</h3>
+              <ul class="cs_fs_18 cs_white_color cs_medium cs_mp0">
+                <li><a href="services.html">24/7 Emergency Care</a></li>
+                <li><a href="services.html">Cardiac Emergency Services</a></li>
+                <li><a href="services.html">Trauma & Accident Care</a></li>
+                <li><a href="services.html">Poisoning & Toxicology</a></li>
+                <li><a href="services.html">Ambulance Services</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="cs_footer_widget cs_menu_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color">Contact</h3>
+              <ul class="cs_contact_info cs_fs_18 cs_white_color cs_medium cs_mp0">
+                <li><i class="fa-solid fa-phone cs_accent_color_v1"></i> <a href="tel:+917070899941" class="cs_white_color">+91-7070899941</a></li>
+                <li><i class="fa-solid fa-envelope cs_accent_color_v1"></i> <a href="mailto:codebluehospital1@gmail.com" class="cs_white_color">codebluehospital1@gmail.com</a></li>
+                <li><i class="fa-solid fa-location-dot cs_accent_color_v1"></i> Mithanpura-Bela Road, Kailash Vivaah Bhawan, Muzaffarpur, Bihar, 842002</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="cs_footer_bottom">
       <div class="container">
         <div class="cs_footer_bottom_text">
-          <div class="cs-copyright cs_fs_18 cs_white_color">All Right Reserved Copyright &copy; 2024 <a href="https://themeforest.net/user/laralink" target="_blank" class="cs_profile_link cs_accent_color_v1">Laralink</a>
-          </div>
-          <ul class="cs_footer_links cs_mp0  cs_fs_18 cs_white_color">
+          <div class="cs-copyright cs_fs_18 cs_white_color">&copy; 2026 Code Blue Emergency Hospital. All Rights Reserved.</div>
+          <ul class="cs_footer_links cs_mp0 cs_fs_18 cs_white_color">
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/917070899941" target="_blank" class="cb-whatsapp-btn"><i class="fa-brands fa-whatsapp"></i></a>
 
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
@@ -321,16 +266,8 @@
   <script src="assets/js/YTPlayer.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    $('.ca_appointment_form').on('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you! Your appointment request has been submitted.');
-      this.reset();
-    });
-    $('.cs_newsletter_form').on('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you! You have been subscribed to our newsletter.');
-      this.reset();
-    });
+    $('.ca_appointment_form').on('submit', function(e) { e.preventDefault(); alert('Thank you! Your appointment request has been submitted.'); this.reset(); });
+    $('.cs_newsletter_form').on('submit', function(e) { e.preventDefault(); alert('Thank you! You have been subscribed.'); this.reset(); });
   </script>
   </body>
 </html>
